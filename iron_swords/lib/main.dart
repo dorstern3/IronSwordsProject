@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-
+import 'package:iron_swords/theme/palette.dart';
 import 'package:iron_swords/widgets/select.dart';
 
 Future<void> main() async {
@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Iron Swords',
-      theme: ThemeData(),
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: Pallete.greyColor,
+      ),
       home: const Select(),
     );
   }

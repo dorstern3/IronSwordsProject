@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iron_swords/theme/palette.dart';
 
 class RegistrField extends StatelessWidget {
   final String hintText;
@@ -14,12 +15,16 @@ class RegistrField extends StatelessWidget {
       ),
       child: TextFormField(
         controller: controllerRegister,
+        style: const TextStyle(color: Pallete.blackColor),
         textAlign: TextAlign.right,
         decoration: InputDecoration(
+          hintStyle: const TextStyle(color: Pallete.greenColor),
+          fillColor: Pallete.whiteColor,
+          filled: true,
           enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(
               color: Colors.black,
-              width: 2,
+              width: 3,
             ),
           ),
           focusedBorder: const OutlineInputBorder(
@@ -40,10 +45,11 @@ class ButtonRegister extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
+        backgroundColor: Pallete.whiteColor,
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 120),
         side: const BorderSide(
           color: Colors.black,
-          width: 2,
+          width: 3,
         ),
       ),
       onPressed: onPressed,
@@ -69,9 +75,10 @@ class LoginNavigate extends StatelessWidget {
         padding: const EdgeInsets.only(left: 30, right: 30),
         child: TextButton(
           style: TextButton.styleFrom(
+            backgroundColor: Pallete.whiteColor,
             side: const BorderSide(
               color: Colors.black,
-              width: 2,
+              width: 3,
             ),
           ),
           onPressed: () {

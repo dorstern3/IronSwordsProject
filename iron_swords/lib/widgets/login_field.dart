@@ -67,37 +67,40 @@ class RegisterNavigate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Directionality(
       textDirection: TextDirection.rtl,
-      child: TextButton(
-        style: TextButton.styleFrom(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 120),
-          side: const BorderSide(
-            color: Colors.black,
-            width: 2,
+      child: Container(
+        padding: const EdgeInsets.only(left: 30, right: 30),
+        child: TextButton(
+          style: TextButton.styleFrom(
+            side: const BorderSide(
+              color: Colors.black,
+              width: 2,
+            ),
           ),
-        ),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const RegisterPage()),
-          );
-        },
-        child: const Center(
-          child: Text.rich(
-            TextSpan(
-              text: 'משתמש חדש? \n',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 18,
-              ),
-              children: [
-                TextSpan(
-                  text: 'כאן נרשמים',
-                  style: TextStyle(
-                    color: Colors.green,
-                    fontSize: 18,
-                  ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const RegisterPage()),
+            );
+          },
+          child: const Center(
+            child: Text.rich(
+              textAlign: TextAlign.center,
+              TextSpan(
+                text: 'משתמש חדש? \n',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
                 ),
-              ],
+                children: [
+                  TextSpan(
+                    text: 'כאן נרשמים',
+                    style: TextStyle(
+                      color: Colors.green,
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

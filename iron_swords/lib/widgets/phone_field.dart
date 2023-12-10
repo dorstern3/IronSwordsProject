@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:iron_swords/theme/palette.dart';
 
 class PhoneField extends StatelessWidget {
   const PhoneField({super.key});
@@ -11,12 +12,15 @@ class PhoneField extends StatelessWidget {
         maxWidth: 300,
       ),
       child: TextFormField(
+        style: const TextStyle(color: Pallete.blackColor),
         textAlign: TextAlign.right,
         decoration: const InputDecoration(
+          fillColor: Pallete.whiteColor,
+          filled: true,
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
               color: Colors.black,
-              width: 2,
+              width: 3,
             ),
           ),
           focusedBorder: OutlineInputBorder(
@@ -35,10 +39,11 @@ class ButtonPhoto extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
+        backgroundColor: Pallete.whiteColor,
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 120),
         side: const BorderSide(
           color: Colors.black,
-          width: 2,
+          width: 3,
         ),
       ),
       onPressed: () {},
@@ -60,10 +65,11 @@ class SignOut extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
+        backgroundColor: Pallete.whiteColor,
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 60),
         side: const BorderSide(
           color: Colors.black,
-          width: 2,
+          width: 3,
         ),
       ),
       child: const Text(

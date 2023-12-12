@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:iron_swords/widgets/finger_print.dart';
 import 'package:iron_swords/widgets/login_field.dart';
 
 class LoginPage extends StatefulWidget {
@@ -54,6 +55,10 @@ class _LoginState extends State<LoginPage> {
             ButtonLogin(
               onPressed: signIn,
             ),
+            const SizedBox(
+              height: 50,
+            ),
+            const FingerPrintLogin(),
             const SizedBox(
               height: 50,
             ),

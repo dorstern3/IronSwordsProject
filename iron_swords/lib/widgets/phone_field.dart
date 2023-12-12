@@ -81,6 +81,7 @@ class SignOut extends StatelessWidget {
       ),
       onPressed: () {
         FirebaseAuth.instance.signOut();
+        Navigator.pop(context);
       },
     );
   }

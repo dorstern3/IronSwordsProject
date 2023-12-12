@@ -95,7 +95,7 @@ class LoginNavigate extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: 'כניסה',
+                    text: 'התחברות',
                     style: TextStyle(
                       color: Colors.green,
                       fontSize: 18,

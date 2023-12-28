@@ -27,43 +27,45 @@ class _LoginState extends State<LoginPage> {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(top: 90.0, right: 30, left: 30),
-        child: Column(
-          children: [
-            const Center(
-              child: Text(
-                'התחברות',
-                style: TextStyle(
-                  fontSize: 40,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              const Center(
+                child: Text(
+                  'התחברות',
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 80,
-            ),
-            LoginField(
-              hintText: 'שם משתמש',
-              controllerLogin: emailControllerLogin,
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            LoginField(
-                hintText: 'סיסמא', controllerLogin: passwordControllerLogin),
-            const SizedBox(
-              height: 50,
-            ),
-            ButtonLogin(
-              onPressed: signIn,
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            const FingerPrintLogin(),
-            const SizedBox(
-              height: 50,
-            ),
-            const RegisterNavigate(),
-          ],
+              const SizedBox(
+                height: 80,
+              ),
+              LoginField(
+                hintText: 'שם משתמש',
+                controllerLogin: emailControllerLogin,
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              LoginField(
+                  hintText: 'סיסמא', controllerLogin: passwordControllerLogin),
+              const SizedBox(
+                height: 50,
+              ),
+              ButtonLogin(
+                onPressed: signIn,
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              const FingerPrintLogin(),
+              const SizedBox(
+                height: 50,
+              ),
+              const RegisterNavigate(),
+            ],
+          ),
         ),
       ),
     );

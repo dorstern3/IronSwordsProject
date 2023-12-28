@@ -27,41 +27,43 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(top: 90.0, right: 30, left: 30),
-        child: Column(
-          children: [
-            const Center(
-              child: Text(
-                'הרשמה',
-                style: TextStyle(
-                  fontSize: 40,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              const Center(
+                child: Text(
+                  'הרשמה',
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 80,
-            ),
-            RegistrField(
-              hintText: 'שם משתמש',
-              controllerRegister: emailControllerRegister,
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            RegistrField(
-              hintText: 'סיסמא',
-              controllerRegister: passwordControllerRegister,
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            ButtonRegister(
-              onPressed: signUp,
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            const LoginNavigate(),
-          ],
+              const SizedBox(
+                height: 80,
+              ),
+              RegistrField(
+                hintText: 'שם משתמש',
+                controllerRegister: emailControllerRegister,
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              RegistrField(
+                hintText: 'סיסמא',
+                controllerRegister: passwordControllerRegister,
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              ButtonRegister(
+                onPressed: signUp,
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              const LoginNavigate(),
+            ],
+          ),
         ),
       ),
     );

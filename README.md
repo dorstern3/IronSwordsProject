@@ -5,7 +5,7 @@
 
 ## View:
 - ### Android device:
-- 
+
 ### Register:
 ![IronSwords Register](https://github.com/dorstern3/IronSwordsProject/assets/96941609/f75cfe9c-1e7d-486a-b686-af80d0d27d80)
 

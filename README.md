@@ -25,12 +25,10 @@ Here you can see only a part of the project I carried out that I can share.
 ![IronSwords Phone](https://github.com/dorstern3/IronSwordsProject/assets/96941609/ba0c9c0e-b62d-43d6-8166-89970d139224)
 
 ## Description:
-User application with the features:
+ Application with the features:
 - Registration and login with email and password.
-- Registration and Login with Facebook.
-- Registration and Login with Google.
-- Recover password with email.
-- Display the username after login (on the home page).
+- Login with FingerPrint.
+- All user information is stored in FireBase.
 
 - ## Platforms:
 - [X] Android

@@ -2,8 +2,7 @@
 
 ## Cover:
 Project called "Iron Postcard" created as a volunteer project during the Iron Swords War. <br>
-The purpose of the project is to create communication between the family and the soldiers in the war zone, taking into account the whole issue of information encryption.
-
+The purpose of the project is to create communication between the family and the soldiers in the war zone, taking into account the whole issue of information encryption.<br>
 Here you can see only a part of the project I carried out that I can share.
 
 - **Front &amp; Back:** Flutter

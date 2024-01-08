@@ -11,6 +11,7 @@ Here you can see only a part of the project I carried out that I can share.
 
 ## View:
 - ### Android device:
+https://github.com/dorstern3/IronSwordsProject/assets/96941609/febd6e08-e4df-4161-ad36-c3d9f3bb679f
 
 ### Register:
 ![IronSwords Register](https://github.com/dorstern3/IronSwordsProject/assets/96941609/f75cfe9c-1e7d-486a-b686-af80d0d27d80)
